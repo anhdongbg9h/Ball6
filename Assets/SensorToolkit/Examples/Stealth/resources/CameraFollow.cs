@@ -1,0 +1,29 @@
+﻿using UnityEngine;
+using System.Collections;
+
+namespace SensorToolkit.Example
+{
+    public class CameraFollow : MonoBehaviour
+    {
+        public GameObject ToFollow;
+        public float Speed;
+
+        [Range(1,10)]
+        public float smoothFactor;
+
+        Vector3 offset;
+
+        void Start()
+        {
+            offset = transform.position - ToFollow.transform.position;
+        }
+
+        void LateUpdate()
+        {
+            if (ToFollow == null) return;
+
+            var targetPos = ToFollow.transform.position + offset;
+            transform.position = Vector3.Lerp(transform.position, targetPos,smoothFactor* Time.deltaTime);
+        }
+    }
+}

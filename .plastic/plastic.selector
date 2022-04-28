@@ -1,0 +1,4 @@
+repository "Ball6"
+  path "/"
+    smartbranch "/main/add QC" 
+     

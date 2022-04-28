@@ -1,0 +1,728 @@
+fileFormatVersion: 2
+guid: 6a1a55ba0b7b349488ddbb73cf8ca291
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3837666925224939060
+    second: Bomb_enemy1_0
+  - first:
+      213: -8664580536219647213
+    second: Bomb_enemy1_1
+  - first:
+      213: 3441947863653672500
+    second: Bomb_enemy1_2
+  - first:
+      213: 773509984220626028
+    second: Bomb_enemy1_3
+  - first:
+      213: 2111684496924846891
+    second: Bomb_enemy1_4
+  - first:
+      213: 5620339969497148640
+    second: Bomb_enemy1_5
+  - first:
+      213: -6590996002737560087
+    second: Bomb_enemy1_6
+  - first:
+      213: 5952394765135219241
+    second: Bomb_enemy1_7
+  - first:
+      213: -4703975666567428056
+    second: Bomb_enemy1_8
+  - first:
+      213: 5051009926217262423
+    second: Bomb_enemy1_9
+  - first:
+      213: -436024987383374343
+    second: Bomb_enemy1_10
+  - first:
+      213: -115736607455822313
+    second: Bomb_enemy1_11
+  - first:
+      213: 74686315963675987
+    second: Bomb_enemy1_12
+  - first:
+      213: 8647256282021636509
+    second: Bomb_enemy1_13
+  - first:
+      213: -6449508055317255248
+    second: Bomb_enemy1_14
+  - first:
+      213: -8798603514566605848
+    second: Bomb_enemy1_15
+  - first:
+      213: 5410787817126884765
+    second: Bomb_enemy1_16
+  - first:
+      213: 7456471867909911693
+    second: Bomb_enemy1_17
+  - first:
+      213: 4764438752044133484
+    second: Bomb_enemy1_18
+  - first:
+      213: 149599084256567629
+    second: Bomb_enemy1_19
+  - first:
+      213: -4402050868598825432
+    second: Bomb_enemy1_20
+  - first:
+      213: -668654771715332421
+    second: Bomb_enemy1_21
+  - first:
+      213: 8289468339299882864
+    second: Bomb_enemy1_22
+  - first:
+      213: -2283892852925322051
+    second: Bomb_enemy1_23
+  - first:
+      213: -1373267616092108497
+    second: Bomb_enemy1_24
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bomb_enemy1_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 249
+        width: 246
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1b3bba34eddbac0800000000000000
+      internalID: -3837666925224939060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb_enemy1_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 246
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3134dd2c8e931c780800000000000000
+      internalID: -8664580536219647213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb_enemy1_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 497
+        width: 28
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436ed74885144cf20800000000000000
+      internalID: 3441947863653672500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb_enemy1_3
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 498
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c30bf7b3f0cba00800000000000000
+      internalID: 773509984220626028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb_enemy1_4
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 498
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ba7ec9cd53e4d10800000000000000
+      internalID: 2111684496924846891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb_enemy1_5
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 497
+        width: 29
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ecaec6ac657ffd40800000000000000
+      internalID: 5620339969497148640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb_enemy1_6
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 321
+        width: 247
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5eecc5e041884a0800000000000000
+      internalID: -6590996002737560087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb_enemy1_7
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 126
+        width: 247
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a87c270872b9250800000000000000
+      internalID: 5952394765135219241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb_enemy1_8
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 64
+        width: 256
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828ca22dd0f18beb0800000000000000
+      internalID: -4703975666567428056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb_enemy1_9
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 2
+        width: 256
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 755e62934cac81640800000000000000
+      internalID: 5051009926217262423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb_enemy1_10
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 438
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fdd1d9859de2f9f0800000000000000
+      internalID: -436024987383374343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb_enemy1_11
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 439
+        width: 45
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71e36113b22d46ef0800000000000000
+      internalID: -115736607455822313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb_enemy1_12
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 484
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355f8940fc6590100800000000000000
+      internalID: 74686315963675987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb_enemy1_13
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 447
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d992aabf5c9310870800000000000000
+      internalID: 8647256282021636509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb_enemy1_14
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 410
+        width: 62
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb6bca389ebe76a0800000000000000
+      internalID: -6449508055317255248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb_enemy1_15
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 297
+        width: 83
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e301c278b415e580800000000000000
+      internalID: -8798603514566605848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb_enemy1_16
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 326
+        width: 83
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d95fbd22adaf61b40800000000000000
+      internalID: 5410787817126884765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb_enemy1_17
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 184
+        width: 83
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d84b67468a5ba7760800000000000000
+      internalID: 7456471867909911693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb_enemy1_18
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 213
+        width: 83
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c22b94dcfae1240800000000000000
+      internalID: 4764438752044133484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb_enemy1_19
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 184
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4126d3139b731200800000000000000
+      internalID: 149599084256567629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb_enemy1_20
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 192
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e97fdde06c8e2c0800000000000000
+      internalID: -4402050868598825432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb_enemy1_21
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 184
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6a98e170678b6f0800000000000000
+      internalID: -668654771715332421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb_enemy1_22
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 128
+        width: 151
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07711dcf88b1a0370800000000000000
+      internalID: 8289468339299882864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb_enemy1_23
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 65
+        width: 152
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc25540d8bfd40e0800000000000000
+      internalID: -2283892852925322051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb_enemy1_24
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 2
+        width: 152
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f294849016c21fce0800000000000000
+      internalID: -1373267616092108497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,821 @@
+fileFormatVersion: 2
+guid: 97d55a63d49a9214cbefdb066c18c1da
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 763233588961505950
+    second: Square_enemy1_1
+  - first:
+      213: 7361678908030649114
+    second: Square_enemy1_2
+  - first:
+      213: -4166343194757986206
+    second: Square_enemy1_3
+  - first:
+      213: -6085886350235813175
+    second: Square_enemy1_4
+  - first:
+      213: -4292846717139544256
+    second: Square_enemy1_5
+  - first:
+      213: -3568533133306856181
+    second: Square_enemy1_6
+  - first:
+      213: -3115404120822434851
+    second: Square_enemy1_7
+  - first:
+      213: -3787086076380575568
+    second: Square_enemy1_8
+  - first:
+      213: -1489070650631066048
+    second: Square_enemy1_9
+  - first:
+      213: -1282781537926130204
+    second: Square_enemy1_10
+  - first:
+      213: 1312616019512709654
+    second: Square_enemy1_11
+  - first:
+      213: -1411261880029213352
+    second: Square_enemy1_12
+  - first:
+      213: -943248805919510136
+    second: Square_enemy1_13
+  - first:
+      213: -6870540573222169026
+    second: Square_enemy1_14
+  - first:
+      213: -6679782362060934351
+    second: Square_enemy1_15
+  - first:
+      213: -1690336732025987363
+    second: Square_enemy1_16
+  - first:
+      213: -3450814235214126259
+    second: Square_enemy1_17
+  - first:
+      213: -7297416184004124973
+    second: Square_enemy1_18
+  - first:
+      213: 3353580595065660631
+    second: Square_enemy1_19
+  - first:
+      213: 3306702603268651695
+    second: Square_enemy1_20
+  - first:
+      213: 8373436142328302494
+    second: Square_enemy1_21
+  - first:
+      213: -8727024558428235433
+    second: Square_enemy1_22
+  - first:
+      213: 5434535686696446268
+    second: Square_enemy1_23
+  - first:
+      213: -2615130207255317321
+    second: Square_enemy1_24
+  - first:
+      213: -8920734948838701857
+    second: Square_enemy1_25
+  - first:
+      213: 5526834462775394716
+    second: Square_enemy1_26
+  - first:
+      213: -5007975112823376120
+    second: Square_enemy1_27
+  - first:
+      213: 3505223654127475158
+    second: Square_enemy1_28
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Square_enemy1_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2
+        width: 243
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ed965710761d1e0800000000000000
+      internalID: -2174843889080738257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_1
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 2
+        width: 242
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9272b6c7ec879a00800000000000000
+      internalID: 763233588961505950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_2
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 2
+        width: 215
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1307a786ffe92660800000000000000
+      internalID: 7361678908030649114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_3
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 2
+        width: 215
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268851840fc2e26c0800000000000000
+      internalID: -4166343194757986206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_4
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 202
+        width: 65
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cabbcedb969a8ba0800000000000000
+      internalID: -6085886350235813175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_5
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 202
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04712bdb7aebc64c0800000000000000
+      internalID: -4292846717139544256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_6
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 203
+        width: 56
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d780ca5060a7ec0800000000000000
+      internalID: -3568533133306856181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_7
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 201
+        width: 50
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3379e457cd3c4d0800000000000000
+      internalID: -3115404120822434851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_8
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 202
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b802834741917bc0800000000000000
+      internalID: -3787086076380575568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_9
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 207
+        width: 31
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04eeca7f122c55be0800000000000000
+      internalID: -1489070650631066048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_10
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 209
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5db7bdcf4a23ee0800000000000000
+      internalID: -1282781537926130204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_11
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 213
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612da81b059573210800000000000000
+      internalID: 1312616019512709654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_12
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 219
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d0fcb1cc03a6ce0800000000000000
+      internalID: -1411261880029213352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_13
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 219
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8813b546538e8e2f0800000000000000
+      internalID: -943248805919510136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_14
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 113
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e361f2610cfe6a0a0800000000000000
+      internalID: -6870540573222169026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_15
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 2
+        width: 100
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133307c2555ac43a0800000000000000
+      internalID: -6679782362060934351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_16
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 150
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddedbc0b2b7ba88e0800000000000000
+      internalID: -1690336732025987363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_17
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 196
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d43633c7cbe3c10d0800000000000000
+      internalID: -3450814235214126259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_18
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 199
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de5f3ed4ae5aba90800000000000000
+      internalID: -7297416184004124973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_19
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 201
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d4288e78cf4a8e20800000000000000
+      internalID: 3353580595065660631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_20
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 201
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faaffad7f74c3ed20800000000000000
+      internalID: 3306702603268651695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_21
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 201
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b45ec9ecb643470800000000000000
+      internalID: 8373436142328302494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_22
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 150
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75956c0e66163e680800000000000000
+      internalID: -8727024558428235433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_23
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 150
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39a9b4e9695b6b40800000000000000
+      internalID: 5434535686696446268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_24
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 76
+        width: 198
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4372b9ee035bbd0800000000000000
+      internalID: -2615130207255317321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_25
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 2
+        width: 198
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd48e0ff3de233480800000000000000
+      internalID: -8920734948838701857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_26
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 216
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c914d1659a243bc40800000000000000
+      internalID: 5526834462775394716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_27
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 111
+        width: 95
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8077a241b29108ab0800000000000000
+      internalID: -5007975112823376120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square_enemy1_28
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 2
+        width: 99
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d9909a875e05a030800000000000000
+      internalID: 3505223654127475158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -56,20 +56,6 @@ public class MovePlayer2D : MonoBehaviour
         }
     }
     private void OnCollisionEnter2D(Collision2D other) {
-        if(other.gameObject.CompareTag("Ground"))
-        {
-            isCollisisonGround = true;
-            /*if ((transform.position.x - other.contacts[0].point.x < 0.3f)
-                && (other.contacts[0].point.y - transform.position.y < -0.79f)
-                || (other.contacts[0].point.y - transform.position.y > 0.1f))
-            {
-                isCollisisonGround = true;
-                Debug.Log("isCollision: " + isCollisisonGround);
-            }
-            Debug.Log("point: " + other.contacts.Length);
-            float test = other.contacts[0].point.y - transform.position.y;
-            Debug.Log("first point that collision: " + test);*/
-        }
         if (other.gameObject.CompareTag("Jumped"))
         {
             isJumped = true;
@@ -113,6 +99,17 @@ public class MovePlayer2D : MonoBehaviour
             (other.gameObject.transform.position.y + other.gameObject.GetComponent<BoxCollider2D>().size.y /2)){
                 if(isMove && isAtTopBox && isCollisisonGround){
                     other.gameObject.GetComponent<Rigidbody2D>().AddForce(- movement*400);
+                }
+            }
+        }
+        if (other.gameObject.CompareTag("Ground"))
+        {
+            for (int i = 0; i < other.contacts.Length; i++)
+            {
+                Debug.Log(transform.position.y - other.contacts[i].point.y);
+                if (transform.position.y - other.contacts[i].point.y > 0.3f)
+                {
+                    isCollisisonGround = true;
                 }
             }
         }

@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: 4592908761394830816
     second: sactx-0-2048x2048-ETC2-UI-5726ecc2_0
+  - first:
+      213: -715907265614188776
+    second: sactx-0-2048x2048-ETC2-UI-5726ecc2_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -122,7 +125,7 @@ TextureImporter:
         width: 1026
         height: 637
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -130,6 +133,27 @@ TextureImporter:
       bones: []
       spriteID: 0edd7b82f2a4dbf30800000000000000
       internalID: 4592908761394830816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-ETC2-UI-5726ecc2_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1279
+        width: 919
+        height: 708
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81fe1fc82269016f0800000000000000
+      internalID: -715907265614188776
       vertices: []
       indices: 
       edges: []

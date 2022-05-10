@@ -1826,12 +1826,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shape: 0
+  state: 0
+  rb: {fileID: 5569112293469550671}
   isGold: 0
-  canvas: {fileID: 0}
+  one: 0
+  atTop: 0
+  isOne: 0
+  posCanvas: {fileID: 0}
   speed: 300
   jumpForce: 10
   hp: 3
-  state: 0
+  stateBoss: 0
   darts: {fileID: 2529746517378510589, guid: c852652d2258d9c41b00cce08c03c885, type: 3}
   posDart:
   - {fileID: 5569112293145024581}
@@ -1839,7 +1844,6 @@ MonoBehaviour:
   - {fileID: 5569112292479149485}
   - {fileID: 5569112292090508571}
   - {fileID: 5569112293459326950}
-  rb: {fileID: 5569112293469550671}
   actiDizzyDart: {fileID: 5569112291926383076}
   actiDizzyStar: {fileID: 5569112293543196139}
   actiDizzyInEye: {fileID: 5569112292910575001}
@@ -1990,7 +1994,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5569112293621305670
 Transform:
   m_ObjectHideFlags: 0

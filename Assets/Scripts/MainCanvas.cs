@@ -9,7 +9,8 @@ public class MainCanvas : MonoBehaviour
     public static MainCanvas instance;
     public List<Sprite> spirPlayer;
     public Image imgPlayer;
-    public GameObject canvasHome, canvasAds;
+    public GameObject canvasHome, canvasAds, canvasGamePlay, canvasOffer, canvasShop;
+    public GameObject btnBack;
     public GameObject player, background;
     private GameObject obj;
     public int idex;
@@ -29,6 +30,7 @@ public class MainCanvas : MonoBehaviour
     {
         imgPlayer.sprite = spirPlayer[idex];
     }
+
     public void _Next(){
         idex ++;
         if(idex == spirPlayer.Count){
@@ -37,7 +39,6 @@ public class MainCanvas : MonoBehaviour
         ChangeSpirePlayer();
     }
     public void _Prev(){
-        Debug.Log(1);
         idex --;
         if(idex < 0){
             idex = spirPlayer.Count - 1;
@@ -51,6 +52,7 @@ public class MainCanvas : MonoBehaviour
     public void NextRoomButton(){
         canvasHome.SetActive(false);
         canvasAds.SetActive(false);
+        canvasGamePlay.SetActive(true);
         player.SetActive(true);
         background.SetActive(true);
         obj = Instantiate(Resources.Load("1/Lv" + GameManager.instance.idRoom) as GameObject);
@@ -58,9 +60,9 @@ public class MainCanvas : MonoBehaviour
     public void GoToHome(){
         canvasHome.SetActive(true);
         canvasAds.SetActive(true);
+        canvasGamePlay.SetActive(false);
         player.SetActive(false);
         background.SetActive(false);
-        //obj.SetActive(false);
         Destroy(obj);
     }
 
@@ -74,11 +76,18 @@ public class MainCanvas : MonoBehaviour
     }
     public void Offer()
     {
-        Debug.Log("Button Offer");
+        //Debug.Log("Button Offer");
+        canvasOffer.SetActive(true);
+    }
+    public void TurnOffCanvasOffer()
+    {
+        canvasOffer.SetActive(false);
     }
     public void Shop()
     {
-        Debug.Log("Button Shop");
+        //Debug.Log("Button Shop");
+        canvasShop.SetActive(true);
+        btnBack.SetActive(true);
     }
     public void Skin()
     {
@@ -91,5 +100,19 @@ public class MainCanvas : MonoBehaviour
     public void AddCoinQC()
     {
         Debug.Log("Button AddCoinQC");
+    }
+
+    public void Test()
+    {
+        Debug.Log("Test");
+    }
+
+    public void BtnBack()
+    {
+        if (canvasShop.activeSelf == true)
+        {
+            canvasShop.SetActive(false);
+            btnBack.SetActive(false);
+        }
     }
 }

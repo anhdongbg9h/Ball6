@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class Enemy : EnemyBase
 {
+    #region Variables
     public ShapeEnemy shape;
     public State state;
     [HideInInspector]
-    public Rigidbody2D rb;
-
     public bool isGold;
     [HideInInspector]
     public bool one;
@@ -16,12 +15,10 @@ public class Enemy : EnemyBase
     int count = 0;
     [HideInInspector]
     public bool atTop;
-
     [HideInInspector]
     public bool isOne;
     private GameObject canvas;
     public Transform posCanvas;
-
     public enum ShapeEnemy
     {
         circle,
@@ -32,22 +29,18 @@ public class Enemy : EnemyBase
         idle,
         attack
     }
+    #endregion
+
     protected override void Move(){
     }
-
     protected override void Attack()
     {
-
     }
-        
     protected override void Die()
     {
-        
     }
-
     protected override void Dizzy()
     {
-
     }
     private void Start() {
         rb = GetComponent<Rigidbody2D>();
@@ -106,6 +99,5 @@ public class Enemy : EnemyBase
             yield return new WaitForSeconds(.2f);
             StartCoroutine(ShowCoinForGold());
         }
-        
     }
 }

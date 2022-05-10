@@ -5,7 +5,7 @@ using UnityEngine;
 public class MovePlayer2D : MonoBehaviour
 {
     public float speed, jumpForce;
-    [HideInInspector]
+    //[HideInInspector]
     public bool isCollisisonGround, isMove, isAtTopBox, isAtTopBall, isJumped, isOnBoat;
     public Rigidbody2D rb;
     Vector3 lastVelocity;
@@ -13,6 +13,7 @@ public class MovePlayer2D : MonoBehaviour
     public Vector2 movement;
     public GameObject children;
     public AudioManager audioManager;
+    public test ts;
     private void OnEnable() {
         transform.position = new Vector3(-3.51f,1.94f,0f);
         children.SetActive(false);
@@ -26,14 +27,26 @@ public class MovePlayer2D : MonoBehaviour
     private void FixedUpdate() {
         lastVelocity = rb.velocity;
         MoveCharacter(movement);
-        if(Input.GetKeyDown(KeyCode.W) && (isCollisisonGround 
-                                                                    || isAtTopBox 
-                                                                    || isAtTopBall 
-                                                                    || isJumped
-                                                                    || isOnBoat)){
-            rb.velocity = new Vector2( rb.velocity.x, jumpForce);
-            isCollisisonGround = false;
-            audioManager.Jump();
+        JumpCharacter();
+    }
+
+    public void AddForceOnPlayer(Vector2 dir)
+    {
+        if (dir != new Vector2(0, 0))
+        {
+            if (isCollisisonGround)
+            {
+                rb.AddForce(dir * speed * 15);
+            }
+            else
+            {
+                rb.AddForce(dir * speed * 30);
+            }
+            isMove = true;
+        }
+        else
+        {
+            isMove = false;
         }
     }
     public void MoveCharacter(Vector2 dir)
@@ -53,6 +66,29 @@ public class MovePlayer2D : MonoBehaviour
         else
         {
             isMove = false;
+        }
+    }
+
+    public void JumpCharacter()
+    {
+        if (Input.GetKeyDown(KeyCode.W) && (isCollisisonGround
+                                                                    || isAtTopBox
+                                                                    || isAtTopBall
+                                                                    || isJumped
+                                                                    || isOnBoat))
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            isCollisisonGround = false;
+            audioManager.Jump();
+        }
+    }
+
+    public void JumpCharacterUI() {
+        if (isCollisisonGround || isAtTopBox || isAtTopBall || isJumped || isOnBoat)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            isCollisisonGround = false;
+            audioManager.Jump();
         }
     }
     private void OnCollisionEnter2D(Collision2D other) {
@@ -106,7 +142,6 @@ public class MovePlayer2D : MonoBehaviour
         {
             for (int i = 0; i < other.contacts.Length; i++)
             {
-                Debug.Log(transform.position.y - other.contacts[i].point.y);
                 if (transform.position.y - other.contacts[i].point.y > 0.3f)
                 {
                     isCollisisonGround = true;

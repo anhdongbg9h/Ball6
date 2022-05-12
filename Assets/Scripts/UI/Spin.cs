@@ -16,7 +16,17 @@ public class Spin : MonoBehaviour
     {
         uiSpinBtn.onClick.AddListener(() =>
         {
-            uiSpinText.text = "Spinning...";
+            uiSpinBtn.interactable = false;
+            //uiSpinText.text = "Spinning...";
+
+            pickerWheel.OnSpinStart(() => Debug.Log("Spin Starting...."));
+
+            pickerWheel.OnSpinEnd(WheelPiece => {
+                Debug.Log("Spin End: Label: " + WheelPiece.Label + ", Amount: " + WheelPiece.Amount);
+                uiSpinBtn.interactable = true;
+                //uiSpinText.text = "Spin";
+            });
+
             pickerWheel.Spin();
         });
     }

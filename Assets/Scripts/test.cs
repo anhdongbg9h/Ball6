@@ -1,60 +1,37 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class test : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
+public class test : MonoBehaviour
 {
-    public StateMove stateMove;
-    public Direction direction;
-    public MovePlayer2D movePlayer2;
-    Vector2 dir;
-    public enum StateMove
+    public int id, cost;
+    public Text costText;
+    public Button purchaseBtn;
+
+
+    private void Awake()
     {
-        idle,
-        left,
-        right
+        purchaseBtn.onClick.AddListener(OnPurchase);
     }
-    public enum Direction
+
+    public void UpdateView()
     {
-        dirLeft,
-        dirRight,
-        jump
+        costText.text = cost.ToString();
     }
-    private void FixedUpdate()
+
+    private void OnPurchase()
     {
-        if (stateMove == StateMove.left)
-        {
-            dir = new Vector2(-1, 0);
-            movePlayer2.AddForceOnPlayer(dir);
-        }
-        else if (stateMove == StateMove.right)
-        {
-            dir = new Vector2(1, 0);
-            movePlayer2.AddForceOnPlayer(dir);
-        }
-        else
-        {
-            dir = new Vector2(0, 0);
-        }
+        Debug.Log("Messege Purchase");
     }
-    public void OnPointerDown(PointerEventData eventData)
+
+
+    public void SetData(int id)
     {
-        if (direction == Direction.dirLeft)
-        {
-            stateMove = StateMove.left;
-        }
-        else if (direction == Direction.dirRight)
-        {
-            stateMove = StateMove.right;
-        }
-        else
-        {
-            movePlayer2.JumpCharacterUI();
-        }
-    }
-    public void OnPointerUp(PointerEventData eventData)
-    {
-        stateMove = StateMove.idle;
+        this.id = id;
+        cost = id * 100;
+        UpdateView();
     }
 }

@@ -8,12 +8,16 @@ public class MainCanvas : MonoBehaviour
 {
     public static MainCanvas instance;
     public List<Sprite> spirPlayer;
+    public SkinUI skinUI;
     public Image imgPlayer;
-    public GameObject canvasHome, canvasAds, canvasGamePlay, canvasOffer, canvasShop;
+    public GameObject canvasHome, canvasAds,
+        canvasGamePlay, canvasOffer, canvasShop,
+        canvasWheel, canvasGift, canvasSkin;
     public GameObject btnBack;
     public GameObject player, background;
     private GameObject obj;
     public int idex;
+    public UIHome uIHome;
     public GameObject eventSystem;
     void Awake(){
         if(instance != null) {
@@ -29,6 +33,7 @@ public class MainCanvas : MonoBehaviour
     void Start()
     {
         imgPlayer.sprite = spirPlayer[idex];
+        //imgPlayer.sprite = skinUI.elementSkins[idex].id;
     }
 
     public void _Next(){
@@ -68,30 +73,45 @@ public class MainCanvas : MonoBehaviour
 
     public void Wheel()
     {
-        Debug.Log("Button Wheel");
+        uIHome.audioSource.Pause();
+        canvasWheel.SetActive(true);
+        btnBack.SetActive(true);
     }
     public void Gift()
     {
-        Debug.Log("Button Gift");
+        canvasAds.SetActive(false);
+        canvasGift.SetActive(true);
+        btnBack.SetActive(true);
     }
     public void Offer()
     {
-        //Debug.Log("Button Offer");
         canvasOffer.SetActive(true);
+        canvasAds.SetActive(false);
     }
     public void TurnOffCanvasOffer()
     {
         canvasOffer.SetActive(false);
+        canvasAds.SetActive(true);
     }
     public void Shop()
     {
-        //Debug.Log("Button Shop");
         canvasShop.SetActive(true);
         btnBack.SetActive(true);
     }
     public void Skin()
     {
-        Debug.Log("Button Skin");
+        canvasSkin.SetActive(true);
+        btnBack.SetActive(true);
+        //test observer parten
+        for(int i  = 0; i < DataManager.instance.datas.Count; i++)
+        {
+            if(DataManager.instance.datas[i].id == 100100)
+            {
+                DataManager.instance.datas[i].temp = 2;
+            }
+        }
+
+        MessageManager.Instance.SendMessage(new Message(TeeMessageType.OnChangeData, new object[] { "200100" }));
     }
     public void AddHeartQC()
     {
@@ -101,17 +121,32 @@ public class MainCanvas : MonoBehaviour
     {
         Debug.Log("Button AddCoinQC");
     }
-
     public void Test()
     {
         Debug.Log("Test");
     }
-
     public void BtnBack()
     {
         if (canvasShop.activeSelf == true)
         {
             canvasShop.SetActive(false);
+            btnBack.SetActive(false);
+        }
+        if (canvasWheel.activeSelf == true)
+        {
+            uIHome.audioSource.Play();
+            canvasWheel.SetActive(false);
+            btnBack.SetActive(false);
+        }
+        if (canvasGift.activeSelf == true)
+        {
+            canvasAds.SetActive(true);
+            canvasGift.SetActive(false);
+            btnBack.SetActive(false);
+        }
+        if (canvasSkin.activeSelf == true)
+        {
+            canvasSkin.SetActive(false);
             btnBack.SetActive(false);
         }
     }

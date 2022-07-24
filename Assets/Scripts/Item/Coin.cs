@@ -5,6 +5,7 @@ using UnityEngine;
 public class Coin : Item
 {
     private float speed = 10;
+    private int value = 50;
 
     public Transform pos;
 
@@ -13,12 +14,13 @@ public class Coin : Item
         base.OnTriggerEnter2D(other);
         if(other.CompareTag("Player"))
         {
-            //MessageManager.Instance.SendMessage(new Message(TeeMessageType.OnChangeData, new object[] {"Dong", 1,   }));
+            DataPlayer.AddCoin(value);
             item.SetActive(false);
-            showText = GameManager.instance.pool.GetPooledObject(GameManager.instance.pool.canvasCoinToPool, GameManager.instance.canvasCoins, GameManager.instance.pool.poolledCanvasCoins);
+            showText = GameManager.instance.pool.GetPooledObject(GameManager.instance.pool.canvasCoinToPool, 
+                GameManager.instance.canvasCoins, GameManager.instance.pool.poolledCanvasCoins);
             showText.transform.position = pos.position;
             showText.SetActive(true);
-            showText.GetComponent<DeleteAfterTime>().delaytime();
+            showText.GetComponent<DeleteAfterTime>().delaytime(GameManager.instance.canvasCoins);
             StartCoroutine(DeleteGameobject());
         }
     }

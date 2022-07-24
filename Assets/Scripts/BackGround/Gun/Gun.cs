@@ -18,8 +18,8 @@ public class Gun : MonoBehaviour
             bullet.transform.parent = pos;
             bullet.transform.localRotation = Quaternion.identity;
             bullet.transform.localPosition = Vector2.zero;
-            bullet.gameObject.SetActive(true);
-            bullet.GetComponent<DeleteAfterTime>().delaytime(); 
+            bullet.SetActive(true);
+            bullet.GetComponent<DeleteAfterTime>().delaytime(GameManager.instance.bullets); 
         }
     }
 }

@@ -26,4 +26,9 @@ public class SkinUI : MonoBehaviour
             elementSkins[i].SetData(i + 1);
         }
     }
+
+    public void Back()
+    {
+        
+    }
 }

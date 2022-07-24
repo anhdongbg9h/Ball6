@@ -2,36 +2,47 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class test : MonoBehaviour
 {
-    public int id, cost;
-    public Text costText;
-    public Button purchaseBtn;
-
+    public static test instance;
+    public List<GameObject> pooledObjects;
+    public GameObject objToPool;
+    public int amountToPool;
 
     private void Awake()
     {
-        purchaseBtn.onClick.AddListener(OnPurchase);
+        instance = this;
     }
 
-    public void UpdateView()
+    private void Start()
     {
-        costText.text = cost.ToString();
+        pooledObjects = new List<GameObject>();
     }
 
-    private void OnPurchase()
+    public void SetPool(GameObject poolObject, Transform parent, List<GameObject> poolObjects)
     {
-        Debug.Log("Messege Purchase");
+        GameObject tmp;
+        for (int i = 0; i < amountToPool; i++)
+        {
+            tmp = Instantiate(poolObject,parent);
+            tmp.SetActive(false);
+            pooledObjects.Add(tmp);
+        }
     }
 
-
-    public void SetData(int id)
+    public GameObject GetPoolObject()
     {
-        this.id = id;
-        cost = id * 100;
-        UpdateView();
+        for (int i = 0; i < amountToPool; i++)
+        {
+            if (!pooledObjects[i].activeInHierarchy)
+            {
+                return pooledObjects[i];
+            }
+        }
+        return null;
     }
 }

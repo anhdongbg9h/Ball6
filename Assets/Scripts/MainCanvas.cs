@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class MainCanvas : MonoBehaviour
 {
     public static MainCanvas instance;
-    public List<Sprite> spirPlayer;
+    //public List<Sprite> spirPlayer;
     public SkinUI skinUI;
     public Image imgPlayer;
     public GameObject canvasHome, canvasAds,
@@ -32,13 +32,15 @@ public class MainCanvas : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        imgPlayer.sprite = spirPlayer[idex];
-        //imgPlayer.sprite = skinUI.elementSkins[idex].id;
+        //imgPlayer.sprite = spirPlayer[idex];
+        imgPlayer.sprite = Resources.Load<GameObject>($"Skin/skin {idex + 1}").GetComponent<Image>().sprite;
+        player.GetComponent<SpriteRenderer>().sprite = imgPlayer.sprite;
     }
 
     public void _Next(){
         idex ++;
-        if(idex == spirPlayer.Count){
+        if (idex == skinUI.elementSkins.Length)
+        {
             idex = 0;
         }
         ChangeSpirePlayer();
@@ -46,12 +48,15 @@ public class MainCanvas : MonoBehaviour
     public void _Prev(){
         idex --;
         if(idex < 0){
-            idex = spirPlayer.Count - 1;
+            idex = skinUI.elementSkins.Length - 1;
         }
         ChangeSpirePlayer();
     }
     public void ChangeSpirePlayer(){
-        imgPlayer.sprite = spirPlayer[idex];
+        /*imgPlayer.sprite = spirPlayer[idex];
+        player.GetComponent<SpriteRenderer>().sprite = imgPlayer.sprite;*/
+
+        imgPlayer.sprite = Resources.Load<GameObject>($"Skin/skin {idex + 1}").GetComponent<Image>().sprite;
         player.GetComponent<SpriteRenderer>().sprite = imgPlayer.sprite;
     }
     public void NextRoomButton(){
@@ -60,15 +65,26 @@ public class MainCanvas : MonoBehaviour
         canvasGamePlay.SetActive(true);
         player.SetActive(true);
         background.SetActive(true);
-        obj = Instantiate(Resources.Load("1/Lv" + GameManager.instance.idRoom) as GameObject);
+        obj = Instantiate(Resources.Load("1/Lv" + DataPlayer.GetIdRoom()) as GameObject);
     }
     public void GoToHome(){
-        canvasHome.SetActive(true);
-        canvasAds.SetActive(true);
-        canvasGamePlay.SetActive(false);
+        Destroy(obj);
         player.SetActive(false);
         background.SetActive(false);
-        Destroy(obj);
+        canvasGamePlay.SetActive(false);
+        if (DataPlayer.GetIdRoom() == 9)
+        {
+            obj = Instantiate(Resources.Load("RoomBoss/" + 1) as GameObject);
+            player.SetActive(true);
+            background.SetActive(true);
+            canvasGamePlay.SetActive(false);
+        }
+        else
+        {
+            canvasHome.SetActive(true);
+            canvasAds.SetActive(true);
+            
+        }
     }
 
     public void Wheel()
@@ -103,7 +119,7 @@ public class MainCanvas : MonoBehaviour
         canvasSkin.SetActive(true);
         btnBack.SetActive(true);
         //test observer parten
-        for(int i  = 0; i < DataManager.instance.datas.Count; i++)
+        /*for(int i  = 0; i < DataManager.instance.datas.Count; i++)
         {
             if(DataManager.instance.datas[i].id == 100100)
             {
@@ -111,7 +127,7 @@ public class MainCanvas : MonoBehaviour
             }
         }
 
-        MessageManager.Instance.SendMessage(new Message(TeeMessageType.OnChangeData, new object[] { "200100" }));
+        MessageManager.Instance.SendMessage(new Message(TeeMessageType.OnChangeData, new object[] { "200100" }));*/
     }
     public void AddHeartQC()
     {
@@ -120,10 +136,6 @@ public class MainCanvas : MonoBehaviour
     public void AddCoinQC()
     {
         Debug.Log("Button AddCoinQC");
-    }
-    public void Test()
-    {
-        Debug.Log("Test");
     }
     public void BtnBack()
     {

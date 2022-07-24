@@ -10,10 +10,11 @@ public class Heart : Item
         if (other.CompareTag("Player"))
         {
             item.SetActive(false);
-            showText = GameManager.instance.pool.GetPooledObject(GameManager.instance.pool.canvasHeartToPool,GameManager.instance.canvasHeart, GameManager.instance.pool.poolledCanvasHeart);
+            showText = GameManager.instance.pool.GetPooledObject(GameManager.instance.pool.canvasHeartToPool,
+                GameManager.instance.canvasHeart, GameManager.instance.pool.poolledCanvasHeart);
             showText.transform.position = pos.position;
             showText.SetActive(true);
-            showText.GetComponent<DeleteAfterTime>().delaytime();
+            showText.GetComponent<DeleteAfterTime>().delaytime(GameManager.instance.canvasHeart);
             StartCoroutine(DeleteGameobject());
         }
     }

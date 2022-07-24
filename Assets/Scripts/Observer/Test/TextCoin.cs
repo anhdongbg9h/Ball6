@@ -9,7 +9,7 @@ public class TextCoin : MonoBehaviour, IMessageHandle
     public int t = 2;
     public void Handle(Message message)
     {
-        textCoin.text = "10";//
+        textCoin.text = "10";
     }
 
     private void Start()

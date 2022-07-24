@@ -2,10 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+
 public enum TeeMessageType
 {
     OnChangeData,
 }
+
+
 public class Message
 {
     public TeeMessageType type;
@@ -24,11 +28,13 @@ public interface IMessageHandle
 {
     void Handle(Message message);
 }
+
 public class MessageManager : MonoBehaviour, ISerializationCallbackReceiver
 {
     private static MessageManager instance = null;
     [HideInInspector] public List<TeeMessageType> _keys = new List<TeeMessageType>();
     [HideInInspector] public List<List<IMessageHandle>> _values = new List<List<IMessageHandle>>();
+
     private Dictionary<TeeMessageType, List<IMessageHandle>> subcribers = new Dictionary<TeeMessageType, List<IMessageHandle>>();
     public static MessageManager Instance { get { return instance; } }
     void Start()

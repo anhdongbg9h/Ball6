@@ -5,15 +5,17 @@ using UnityEngine;
 public class MovePlayer2D : MonoBehaviour
 {
     public float speed, jumpForce;
-    //[HideInInspector]
+    [HideInInspector]
     public bool isCollisisonGround, isMove, isAtTopBox, isAtTopBall, isJumped, isOnBoat;
+    bool isCollisisonEdge;
     public Rigidbody2D rb;
+
+
     Vector3 lastVelocity;
     [HideInInspector]
     public Vector2 movement;
     public GameObject children;
     public AudioManager audioManager;
-    public test ts;
     private void OnEnable() {
         transform.position = new Vector3(-3.51f,1.94f,0f);
         children.SetActive(false);
@@ -25,6 +27,7 @@ public class MovePlayer2D : MonoBehaviour
         movement = new Vector2(Input.GetAxis("Horizontal"),0);
     }
     private void FixedUpdate() {
+        //CheckGround();
         lastVelocity = rb.velocity;
         MoveCharacter(movement);
         JumpCharacter();
@@ -68,7 +71,6 @@ public class MovePlayer2D : MonoBehaviour
             isMove = false;
         }
     }
-
     public void JumpCharacter()
     {
         if (Input.GetKeyDown(KeyCode.W) && (isCollisisonGround
@@ -77,18 +79,19 @@ public class MovePlayer2D : MonoBehaviour
                                                                     || isJumped
                                                                     || isOnBoat))
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            isCollisisonGround = false;
-            audioManager.Jump();
+            Jump();
         }
     }
-
+    public void Jump()
+    {
+        rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        isCollisisonGround = false;
+        audioManager.Jump();
+    }
     public void JumpCharacterUI() {
         if (isCollisisonGround || isAtTopBox || isAtTopBall || isJumped || isOnBoat)
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            isCollisisonGround = false;
-            audioManager.Jump();
+            Jump();
         }
     }
     private void OnCollisionEnter2D(Collision2D other) {
@@ -133,8 +136,8 @@ public class MovePlayer2D : MonoBehaviour
         if(other.gameObject.CompareTag("Box")){
             if((transform.position.y - gameObject.GetComponent<CircleCollider2D>().radius/2) >
             (other.gameObject.transform.position.y + other.gameObject.GetComponent<BoxCollider2D>().size.y /2)){
-                if(isMove && isAtTopBox && isCollisisonGround){
-                    other.gameObject.GetComponent<Rigidbody2D>().AddForce(- movement*400);
+                if(isMove && isAtTopBox && isCollisisonEdge){
+                    other.gameObject.GetComponent<Rigidbody2D>().AddForce(-movement * 500);
                 }
             }
         }
@@ -142,17 +145,36 @@ public class MovePlayer2D : MonoBehaviour
         {
             for (int i = 0; i < other.contacts.Length; i++)
             {
-                if (transform.position.y - other.contacts[i].point.y > 0.3f)
+                if (transform.position.y - other.contacts[i].point.y > 0.4f)
                 {
                     isCollisisonGround = true;
+                }
+                if (other.contacts[i].point.x - transform.position.x > 0.4f)
+                {
+                    isCollisisonEdge = true;
+                }
+                if (transform.position.x - other.contacts[i].point.x > 0.4f)
+                {
+                    isCollisisonEdge = true;
                 }
             }
         }
     }
+    void CheckGround()
+    {
+        /*isCollisisonGround = false;
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheckCollider.position, groundCheckRadius, groundLayer);
+        if (colliders.Length > 0)
+        {
+            isCollisisonGround = true;
+        }*/
+    }
+
     private void OnCollisionExit2D(Collision2D other) {
-        if(other.gameObject.CompareTag("Ground"))
+        if (other.gameObject.CompareTag("Ground"))
         {
             isCollisisonGround = false;
+            isCollisisonEdge = false;
         }
         if (other.gameObject.CompareTag("Jumped"))
         {

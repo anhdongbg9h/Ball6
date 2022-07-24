@@ -82,7 +82,7 @@ public class Enemy : EnemyBase
                 ,GameManager.instance.canvasEnemyBanal, GameManager.instance.pool.poolledCanvasEnemyBanal);
                 canvas.transform.position = posCanvas.transform.position;
                 canvas.SetActive(true);
-                canvas.GetComponent<DeleteAfterTime>().delaytime(); 
+                canvas.GetComponent<DeleteAfterTime>().delaytime(GameManager.instance.canvasEnemyBanal); 
             } 
             isOne = true; 
             Destroy(gameObject, .5f);
@@ -95,7 +95,7 @@ public class Enemy : EnemyBase
             ,GameManager.instance.canvasEnemyBanal, GameManager.instance.pool.poolledCanvasEnemyBanal);
             canvas.transform.position = posCanvas.transform.position;
             canvas.SetActive(true);
-            canvas.GetComponent<DeleteAfterTime>().delaytime();
+            canvas.GetComponent<DeleteAfterTime>().delaytime(GameManager.instance.canvasEnemyBanal);
             yield return new WaitForSeconds(.2f);
             StartCoroutine(ShowCoinForGold());
         }

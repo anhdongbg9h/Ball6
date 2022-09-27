@@ -26495,6 +26495,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ElementSkin
       objectReference: {fileID: 0}
+    - target: {fileID: 6553545964032189881, guid: 8d3c8fde91e50224586061ffd0de7455,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6553545964220539654, guid: 8d3c8fde91e50224586061ffd0de7455,
         type: 3}
       propertyPath: BtnOwner
@@ -26510,6 +26515,11 @@ PrefabInstance:
       propertyPath: BtnNotOwner
       value: 
       objectReference: {fileID: 1596894225}
+    - target: {fileID: 6553545965265434439, guid: 8d3c8fde91e50224586061ffd0de7455,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d3c8fde91e50224586061ffd0de7455, type: 3}
 --- !u!1001 &6881372732373656858

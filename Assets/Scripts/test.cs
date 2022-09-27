@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class test : MonoBehaviour
 {
@@ -32,6 +33,11 @@ public class test : MonoBehaviour
             tmp.SetActive(false);
             pooledObjects.Add(tmp);
         }
+    }
+
+    public void Test()
+    {
+        //objToPool.transform.
     }
 
     public GameObject GetPoolObject()

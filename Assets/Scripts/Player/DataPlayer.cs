@@ -29,6 +29,7 @@ public static class DataPlayer
             SaveData();
         }
     }
+
     private static void SaveData()
     {
         var data = JsonUtility.ToJson(allData);
